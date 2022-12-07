@@ -1,262 +1,259 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>
-    A Walk through Quotebank: Modeling the Quotes Network - The State of Polarization of Quotes
-    
-  </title>
-
-  <meta name="description" content="A Data story by dada">
-
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://aemam022.github.io/">
-  <link rel="alternate" type="application/rss+xml" title="The State of Polarization of Quotes" href="/feed.xml">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-</head>
-
-
-<body>
-
-  <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <img class = "logo-ok" src = "/img/logo.png" alt = "">
-    </a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/project">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/epfl-ada/ada-2021-project-dada">Github</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-  <!-- Page Header -->
-
-<header class="masthead" style="background-image: url('/img/bg2-index.jpg')">
-  
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1>A Walk through Quotebank: Modeling the Quotes Network</h1>
-            
-            <h2 class="subheading">A Data Story by dada</h2>
-            
-            <span class="meta">
-              <span class="reading-time" title="Estimated read time">
-  
-   4 mins  read </span>
-
-            </span>
-          </div>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Digital propagation of the COVID-19 pandemic</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">The digital propagation of the COVID-19 pandemic</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">Context</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Abstract</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Figures</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#datastory">Data Story</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">The digital propagation of the COVID-19 pandemic: a data story</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">We all followed the COVID-19 pandemic maps as it propagated around the world. However, how present was the pandemic mentally in different population around the World ? Embark with us on a quest to understand and link Wikipedia pageview statistics to real-world behavior of different populations during the pandemic.</p>
+                        <a class="btn btn-primary btn-xl" href="#about">Dive into the data story</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Why Wikiedia?</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">Wikipedia is a unique information sharing platform with its open-source management style and open-collaboration editing system. As it has no marketing or advertising campaign, it is reasonable to assume that Wikipedia reflects the interest of the population: people look up Wikipedia when they want information on a particular subject. While Media directs attention, Google and other search engines show what currently has people’s attention, Wikipedia shows what the population wants to know more about (i.e. interest). Using this, we can access the “mental presence” of the virus across cultures and time and analyse how much people cared about the virus.</p>
+                        <a class="btn btn-light btn-xl" href="#services">Let the quest begin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Abstract</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Sturdy Themes</h3>
+                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Up to Date</h3>
+                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Ready to Publish</h3>
+                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Made with Love</h3>
+                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <h2 class = "text-center mt-0">Figures</h2>
+                <hr class="divider" />
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-
-        <h2 id="introduction">Introduction</h2>
-
-<p>We present our project on modeling a speaker network using Quotebank. The dataset is a corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020. We use a speaker attribute table from Wikidata to extract information on the individuals.
-This project aims to explore the relationships between people quoted in the Quotebank dataset. Specifically, we construct a graph based on co-quotation of speakers in the same articles, using years from 2015 to 2020. Visualizing these relationships can give us an understanding of the networks and communities that are behind quotes, such as professional domains and fields of expertise, political orientation, and even like-mindedness.
-Secondly we focus on specific case studies using our graph properties to understand links between speakers in those scenarios.</p>
-
-<h2 id="2020-interactive-quote-graph">2020 Interactive Quote Graph</h2>
-
-<div id="graph1">
-    <style> body { margin: 0; } </style>
-    <script src="//unpkg.com/three"></script>
-    <script src="//unpkg.com/three-spritetext"></script>
-    <script src="//unpkg.com/3d-force-graph"></script>
-    <script src="//unpkg.com/dat.gui"></script>
-    <!--<script src="../../dist/3d-force-graph.js"></script>-->
-    <div id="3d-graph">
-    <script type="text/javascript" src="/3d-JS-Network/graph_title.js"></script>
-    </div>
-  </div>
-
-<p><a href="3d-JS-Network/graph_title_final.html">Click Here for Full Screen And Interactive Data Viz</a></p>
-
-<h2 id="graph-analysis">Graph Analysis</h2>
-
-<p>In this section, we observe different statistics of our big graph. This preliminary analysis helps us to understand the properties of the graph and therefore get to know how to explore it.</p>
-
-<h3 id="general-properties">General properties</h3>
-
-<p>Let’s start by the number of nodes and edges:</p>
-<ul>
-  <li>Nodes: 118824</li>
-  <li>Edges: 374240</li>
-</ul>
-
-<p>First thing to notice, the graph is very sparse:
-Sparsity = \(\frac{|E|}{|E_{max}|}\) =  0.01%</p>
-
-<p>As we want to do clustering, we take a look at the connected components.</p>
-<ul>
-  <li>There are 4 connected components</li>
-  <li>There are 3 small connected components (size 10, 13 and 13)</li>
-  <li>There is one big connected components of 118788 speakers</li>
-</ul>
-
-<p>It looks like we can not rely on connected components only.</p>
-
-<h3 id="degree">Degree</h3>
-
-<p>Who are the main speakers of our graph ? Are people very connected ? Let’s figure this out !</p>
-
-<p><img src="/Graph_analysis/output_8_0.png" alt="png" /></p>
-
-<p><img src="/Graph_analysis/output_8_1.png" alt="png" /></p>
-
-<p>Most of the speakers have very low degrees, but some have very high degree.
-Indeed the degree distribution is following a <strong>power-law</strong>, which is typical for real world networks.</p>
-
-<p>Who are those very famous people ?</p>
-
-<ul>
-  <li>Donald Trump is linked to 2570 people</li>
-  <li>Narendra Modi is linked to 812 people</li>
-  <li>Emmanuel Macron is linked to 752 people</li>
-  <li>Nancy Pelosi is linked to 733 people</li>
-  <li>Mike Pompeo is linked to 718 people</li>
-  <li>Boris Johnson is linked to 692 people</li>
-  <li>Andrew Cuomo is linked to 690 people</li>
-  <li>Benjamin Netanyahu is linked to 669 people</li>
-  <li>António Guterres is linked to 646 people</li>
-  <li>Justin Trudeau is linked to 620 people</li>
-</ul>
-
-<p>The Top 10 central speakers in our graph are very famous country leaders.
-We could have expected this, especially that Donald Trump is the most central.</p>
-
-<h3 id="clustering">Clustering</h3>
-
-<p>Are there obvious and interpretable clusters ?</p>
-
-<p>We use Louvain clustering method to check either we can identify interpretable cluster:</p>
-<ul>
-  <li>the partition results of 543 clusters</li>
-</ul>
-
-<p>It’s a too large number for us to interpret each group by hand, we then focuse on attributes.</p>
-
-<h3 id="homophily">Homophily</h3>
-<p>Which speaker attributes could be useful to filter on ? We compute the homophily with respect to <em>gender</em>, <em>nationality</em> and <em>political party</em>.</p>
-
-<p>The homophily estimate the similarity of connections in the graph with respect to the given attribute.</p>
-
-<p>Results of homophily:</p>
-<ul>
-  <li>gender: 0.225</li>
-  <li>nationality: 0.404</li>
-  <li>party: 0.321</li>
-</ul>
-
-<p>Those results show that <em>nationality</em> is a good attribute to observe clusters. Indeed on the 3D graph we clearly distinguish clusters of speakers with the same nationality.</p>
-
-<p><a class="btn btn-primary float-right" href="/Project_pages/index_2.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Exploring the Graph">Next <span class="d-none d-md-inline">Page</span> →</a></p>
-
-
-
-        <hr>
-
-        <div class="clearfix">
-
-          
-          
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-  <!-- Footer -->
-
-<hr>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <ul class="list-inline text-center">
-          
-          <li class="list-inline-item">
-            <a href="mailto:ahmed.emam@epfl.com">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          
-          
-          
-          
-          
-          
-        </ul>
-        <p class="copyright text-muted">Copyright &copy; dada 2021</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
-
-<script src="/assets/scripts.js"></script>
-
-
-
-
-</body>
-
+        <!--DataStory-->
+        <section class="page-section">
+            <div class="container px-4 px-lg-5 text-center" id="datastory">
+                <h2>Datastory here</h2>
+                <hr class="divider" />
+            </div>
+        </section>
+        <!-- Call to action-->
+        <section class="page-section bg-dark text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - TheDataDiggers22</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
