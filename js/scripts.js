@@ -59,10 +59,11 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 */
+
+
 function addMargin() {
     window.scrollTo(0, window.pageYOffset - 50);
 }
-
 
 window.addEventListener('DOMContentLoaded', () => {
     let scrollPos = 0;
@@ -87,7 +88,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         scrollPos = currentTop;
 
-        //window.addEventListener('hashchange', addMargin);
     });
 
     // Activate SimpleLightbox plugin for portfolio items
@@ -98,16 +98,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 })
 
-// Captures click events of all <a> elements with href starting with #
-$(document).on('click', 'a[href^="#"]', function(event) {
-    // Click events are captured before hashchanges. Timeout
-    // causes offsetAnchor to be called after the page jump.
-    window.setTimeout(function() {
-      addMargin();
-    }, 0);
-  });
-//window.addEventListener('hashchange', addMargin);
-
-window.addEventListener('hashchange', () => {
-    console.log('The hash has changed!')
-  }, false);
