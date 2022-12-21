@@ -4085,8 +4085,8 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  font-size: 1.0rem;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -11345,6 +11345,7 @@ body {
 .text-black-75 {
   color: rgba(0, 0, 0, 0.75) !important;
   text-align: justify;
+  font-weight: 500;
 }
 
 .btn-xl {
@@ -11465,7 +11466,7 @@ header.masthead h1, header.masthead .h1 {
 header.masthead2 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/mobility-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/page_2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

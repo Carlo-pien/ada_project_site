@@ -95,6 +95,5 @@ window.addEventListener('DOMContentLoaded', () => {
         elements: '#portfolio a.portfolio-box'
     });
 
-
 })
 
