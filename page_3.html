@@ -46,29 +46,128 @@
                         <hr class="divider"/>
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">TO DO</p>
+                        <p class="text-white-75 mb-5">6 minutes read</p>
                         <a class="btn btn-primary btn-xl" href="#datastory">Continue the quest</a>
                     </div>
                 </div>
             </div>
         </header>
         <!--DataStory-->
-        <section class="page-section">
+        <section class="page-section bg-lighter">
             <div class="container px-4 px-lg-5 text-center" id="datastory">
-                <h2>What were people doing during the pandemic?</h2>
+                <h2>How did the COVID-19 pandemic impact mobility?</h2>
                 <hr class="divider" />
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-lg-8 text-center" >
                             <p class="mb-4 text-black-75">
-                                During the pandemic, people were engaging in a variety of activities in response to the spread of COVID-19. As the pandemic unfolded, many people turned to Wikipedia and other sources of information to learn more about the virus and the measures being taken to combat it. Some people may have started going out less in order to reduce the risk of transmission, while others may have continued to go out as usual, either out of a sense of trust in their government's handling of the crisis or for other reasons.
-                            </p><p class="mb-4 text-black-75" >
-                                The bubble chart below shows the evolution of the Trust dataset from February to July 2020. The dataset contains the percentage of respondents who reported having "a lot" or "some" trust in their national government in relation to the COVID-19 pandemic. By examining the chart, we can get a sense of how people's trust in their government may have influenced their behavior during the pandemic.
+                                The COVID-19 pandemic had a significant impact on mobility around the world, as various measures such as lockdowns and travel restrictions were implemented in an effort to slow the spread of the virus. This resulted in a halt to many aspects of daily life and disrupted society in many countries. In this dataset, we examine the changes in mobility from the baseline combining <strong>Parks, Transit stations, Retail and Recreational</strong>, and <strong>Workplace</strong>. First we will explore the median of these changes over time for all countries.
                             </p>
                         </div>
                     </div>
                     <div>
-                        <iframe src="assets/figures/bubble_plot_trust.html" width="1000" height="600"></iframe>
+                        <img src="assets/figures/mobility_timeseries.png" alt="Mobility timeseries" width="900">
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center" >
+                            <p class="mb-4 text-black-75">
+                                The data shows a sudden decrease in mobility, going from <strong>9.5%</strong> on the 8th of March to <strong>-52%</strong> on the 13th of April, which coincides with the implementation of lockdowns mid-March. 
+                            </p>
+                            <p class="mb-4 text-black-75">
+                                From June onwards, there is an increase in mobility above the baseline, indicating that people were going out more than usual. This could be due to a combination of factors, such as people feeling a need to socialize after being confined for months, as well as the natural tendency for people to be more active and social during the summer months.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-light">
+            <div class="container px-4 px-lg-5 text-center" id="datastory">
+                <h2>Relation between mobility, death rates and pageviews
+                </h2>
+                <hr class="divider" />
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center" >
+                            <p class="mb-4 text-black-75">
+                                As the pandemic unfolded, many people turned to Wikipedia and other sources of information to learn more about the virus and the measures being taken to combat it. Some people may have started going out less in order to reduce the risk of transmission, while others may have continued to go out as usual, either out of a sense of trust in their government's handling of the crisis or for other reasons.
+                            </p>
+                            <p class="mb-4 text-black-75" >
+                                The bubble chart below shows the evolution of the mobility, deaths and pageviews from February to July 2020. The trust dataset is included as the bubble color,  with the value corresponding to the percentage of respondents who reported having "a lot" or "some" trust in their national government in relation to the COVID-19 pandemic. By examining the chart, we can get a sense of how people's trust in their government may have influenced their behavior during the pandemic.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe src="assets/figures/bubble_plot_trust.html" width="1000" height="550"></iframe>
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <p class="text-black-75 mb-4"> Looking at the different bar races, one may deduce the following points:</p>
+                            <ol>
+                                <li>
+                                    <p class="text-black-75 mb-4">
+                                        Overall, we can observe a trend of growing bubbles moving towards the top left of the chart until March, representing an increase in deaths and of pageviews followed by the reverse effect. 
+                                    </p> 
+                                </li> 
+                                <li>
+                                    <p class="text-black-75 mb-4">
+                                        In general, countries with lower levels of trust in their national government tend to have a lower average baseline for mobility compared to countries with higher trust values. This suggests that trust in government may be a factor in determining the level of mobility and behavior during the COVID-19 pandemic.
+                                    </p> 
+                                </li> 
+                                <li>
+                                    <p class="text-black-75 mb-4">
+                                        In the graph, countries with higher levels of trust in their government tend to be closer to the center compared to those with lower trust. This could be because a more trusting government is more effective at preventing the spread of COVID-19 and handling the health crisis, leading to fewer negative consequences such as a greater number of deaths and a more severe crisis overall. Trust in the government may also play a role in people's willingness to follow guidelines and recommendations related to the pandemic, which could contribute to lower rates of transmission and a less severe impact on the population.
+                                    </p> 
+                                </li> 
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-lighter">
+            <div class="container px-4 px-lg-5 text-center" id="datastory">
+                <h2>
+                    The impact of trust on mobility patterns
+                </h2>
+                <hr class="divider" />
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center" >
+                            <p class="mb-4 text-black-75">
+                                Now that we have examined the overall picture, let's delve deeper into the relationship between mobility and trust during the pandemic.
+                            </p><p class="mb-4 text-black-75" >
+                                Let's plot the minimum mobility change from baseline and examine the relationship with trust in the government using a regression analysis.                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/figures/trust_mobility.png" alt="Mobility timeseries" width="900">
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center" >
+                            <p>
+                                &ensp;
+                            </p>
+                            <h4 class="text-start mb-4">Results of linear regression</h4>
+                            <ul>
+                                <li>
+                                    <p class="text-black-75 mb-4">
+                                        <strong>Intercept</strong>: -89.95, <strong>p-value</strong>:8.413&times;10<sup>-10</sup>
+                                    </p> 
+                                </li> 
+                                <li>
+                                    <p class="text-black-75 mb-4">
+                                        <strong>Coefficient</strong>: 0.481, <strong>p-value</strong>:7.790&times;10<sup>-3</sup>
+                                    </p>
+                                </li>  
+                            </ul>
+                            <p class="mb-4 text-black-75">
+                                Based on the results of the regression analysis, it appears that there is a statistically significant relationship between trust in the government and minimum mobility change during the pandemic. The intercept of -90% suggests that, hypothetically, a country with 0% trust in the government would have a minimum mobility change of -90%. The coefficient of 0.481 indicates that a 10% increase in trust in the government is associated with a 5% increase in minimum mobility change.
+                            </p>
+                            <p class="mb-4 text-black-75">
+                                Overall, these findings suggest that populations that have a higher level of trust in their government tend to have mobility closer to baseline. This could be because a trusting government instills confidence and people may feel less afraid of COVID-19 and are able to maintain a lifestyle that is closer to normal.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,12 +176,12 @@
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Next page</h2>
-                <a class="btn btn-light btn-xl" href="page_4.html">Next page (page 4)</a>
-            </div>
+                <h2 class="mb-4">todo?</h2>
+                <a class="btn btn-light btn-xl" href="page_4.html">Next page</a>
+                <hr class="divider" />
+            </div> 
             <div class="container px-4 px-lg-5 text-center" style="padding-top: 1.5rem;">
-                <h2 class="mb-4">Previous page</h2>
-                <a class="btn btn-light btn-xl" href="page_2.html">Previous page (page 2)</a>
+                <a class="btn btn-light btn-xl" href="page_2.html">Previous page</a>
             </div>
         </section>
         <!-- Footer-->
