@@ -72,8 +72,12 @@
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-lg-8 text-center">
-                            <p class="text-black-75 mb-4">In this datastory, we will examine the connection between the information-seeking behavior of people on Wikipedia and its relation to real-world actions during the COVID-19 pandemic. To do this, we have compiled a dataset containing Wikipedia pageview statistics for COVID-19-related articles in 40 different languages that are representative of various countries, such as Sweden. By comparing these pageview statistics to COVID-19 death rates in these countries, we can see how information-seeking behavior relates to the pandemic.</p>
-                            <p class="text-black-75 mb-4">We will also use the Google mobility dataset and a trust dataset measuring people's trust in their government to visualize the complex relationship between information-seeking behavior, trust, and mobility during the COVID-19 period. Finally, we will delve deeper into select countries to get a more detailed understanding of these relationships.</p>
+                            <p class="text-black-75 mb-4">
+                                In this datastory, we examine the connection between the information-seeking behavior of people towards COVID-19 on Wikipedia and its relation to real-world actions during the pandemic. To do this, we compile a dataset containing Wikipedia pageview statistics for COVID-19-related articles in 38 different languages that are representative of various countries. By comparing these pageview statistics to COVID-19 deaths and cases in these countries, we can compare the digital evolution to the physical one.           
+                            </p>
+                            <p class="text-black-75 mb-4">
+                                We also use the Google mobility dataset and a trust dataset measuring people's trust in their government to visualize the complex relationship between information-seeking behavior, trust, and mobility during the COVID-19 period. Finally, we delve deeper into selected countries to get a more detailed understanding of these relationships.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -200,9 +204,9 @@
                                     <p class="text-black-75 mb-4"> After this step, we are left with 38 countries/languages, which represents 30.6% of the total world population. From there, we extracted the pageview statistics form the 1st january 2020 to the 31 july of 2022. </p>
                                 </li>
                             </ol>
-                            <h4 class="text-start mb-4">Mobility, Trust and COVID datasets</h4>
-                            <p class="text-black-75 mb-4">The preprocessing of these datasets was straightforward, we had only to adjust them to by selecting the right countries and timeframes.</p>
-                            <h4 class="text-start mb-4">A first look into the datasets</h4>
+                            <h4 class="text-start mb-4">Mobility, trust and COVID datasets</h4>
+                            <p class="text-black-75 mb-4">The preprocessing of these datasets was straightforward, we only had to adjust them by selecting the right countries and timeframes.</p>
+                            <h4 class="text-start mb-4">A first look at the datasets</h4>
                         </div>
                     </div>
                     <div>
@@ -215,28 +219,6 @@
                             </p>
                             <p class="text-black-75 mb-4">
                                 By examining the histogram of the distributions of our three variables, we can see that they are skewed, i.e. right-heavy-tailed. The right tail is fat and long for cases and pageviews, and lower and shorter for deaths. The ECDF plots confirm this, showing that 95% of the pageviews and cases are contained within the first 5% of the range of the data, and 95% of the deaths data are contained within the first 12.5%. This is a strong indicator that we'll have to take the log of the data to extract meaningful information
-                            </p>
-                            <p class="text-black-75 mb-4">
-                                Do the datasets correlate? Let's look at mooving averages plots of the deaths, pageviews and their correlation.
-                            </p>
-                        </div>
-                    </div> 
-                    <div>
-                        <img src="assets/figures/propa_cov.png" alt="Mobility timeseries" width="900">
-                    </div>
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-lg-8 text-center">
-                            <p>
-                                &ensp;
-                            </p>
-                            <p class="text-black-75 mb-4">
-                                Beautiful! We can clearly recognize the 6 COVID waves we have had so far when looking at the peaks of death and, maybe more impressive, we have a strong visualisation of the "COVID-craze" when it all began. Pageviews skyrocketed for a brief period and reached record hights never to be seen again.
-                            </p>
-                            <p class="text-black-75 mb-4">
-                                We also plotted the correlation between the two timeseries, and we can confirm that there is always a renewed interest for COVID for each new wave. Often, the correlation is highest just before the deaths are highest. 
-                            </p>
-                            <p class="text-black-75 mb-4">
-                                Now, we have seen the general dynamic of information-seeking behaviour in a world-wide scale, but how did individual countries react?
                             </p>
                         </div>
                     </div> 

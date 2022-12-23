@@ -69,7 +69,7 @@
                             For the first part, we are going to look at the covid-related deaths, as they provide a metric that is independent of the testing intensity of countries. For the second, we are of course looking at the pageview statistics for the covid-related articles. How do the propagations maps look like ? Let’s see! 
                         </p>
                         <p class="text-black-75 mb-4">
-                            We plot the relationship between the evolution of the COVID-19 pandemic and Wikipedia page views related to the disease by comparing the cumulative number of COVID-19 deaths per country to the cumulative number of Wikipedia page views. Both numbers are normalized per 100,000 inhabitants for each country. The period we plot (22 of January 2020 to 4th of August 2020) roughly corresponds to the first wave.  
+                            We plot the relationship between the evolution of the COVID-19 pandemic and Wikipedia page views related to the disease by comparing the cumulative number of COVID-19 deaths per country to the cumulative number of Wikipedia page views. Both numbers are normalized per 100,000 inhabitants for each country. The period we plot (22 of January 2020 to 29th of August 2020) roughly corresponds to the first wave.  
                         </p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <p class="text-black-75 mb-4" >
-                            There are multiple interesting observations that can be made from the evolving maps. The most significant event being the introduction of lockdowns in Europe around the 18th of March 2020. This date marks the moment when the Wikipedia pageviews start to drastically increase.[BY WHAT?]
+                            There are multiple interesting observations that can be made from the evolving maps. The most significant event being the introduction of lockdowns in Europe around the 18th of March 2020. This date marks the moment when the Wikipedia pageviews start to drastically increase.
                         </p>
                         <p class="text-black-75 mb-4">
                             The pageviews of COVID-related articles vary among different countries. Germany and the Czech Republic have high pageviews at 38k and 34k per 100k inhabitants respectively, but low numbers of deaths at 11 and 4 per 100k, while Sweden has low pageviews but high numbers of deaths: 5.8k pageviews for 59 deaths per 100k inhabitants!
@@ -136,7 +136,7 @@
                                 </li> 
                                 <li>
                                     <p class="text-black-75 mb-4">
-                                        Overall, one can observe that the pageviews are more consitent over the whole period. 
+                                        Overall, one can observe that the pageviews are more consitent over the whole period,
                                     </p> 
                                 </li> 
                                 <li>
@@ -157,31 +157,49 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <p class="text-black-75 mb-4" >
-                            Now that we have a sense of the evolution of the pandemic and the digital propagation the last two years, let's habve
-                        </p>
-                        <p class="text-black-75 mb-4">
-                            We go deeper in the analysis by studying the evolution of the regression by windows of 60 day that relates these two dataset by country. For that, we fit a linear regression on the cumulative wikipedia pageviews and the cumulative deaths per country adding an intercept, and we plot the evolution of the fitted line through the time.
+                            Now that we have a sense of the evolution of the pandemic and the digital propagation the last two years, let's go deeper in the analysis by studying the evolution of the regression by windows of 60 day that relates these two dataset by country. For that, we fit a linear regression on the cumulative wikipedia pageviews and the cumulative deaths per country adding an intercept, and we plot the evolution of the fitted line through the time.
                         </p>
                     </div>
                 </div> 
                 <div class="container justify-content-center" style="display: flex; flex-direction: row;">
                     <iframe src="assets/figures/regressionDeathsPageviews.html" width="850" height="550"></iframe>
                 </div>
-                            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <p class="text-black-75 mb-4" >
                             Looking at this Figure, one notice that the slope of the line decreases with the time. It passes from  81.01% (p-value: 0.03) to 5.52% (p-value: 0.67). These values show that the earlier in the pandemic we were, the higher was the relation between COVID-19 deaths and wikipedia page views. However, with the arrival of the new waves, it decreases and the p-value of 0.67 shows even that we can not reject a no slope in the middle of 2021. This is due to the fact that people were already well informed on the disease. 
                         </p>
                         <p class="text-black-75 mb-4">
-                            Another point shown on the animated plot is the evolution of the position of each country related to the regression line. Some stay above it all the time such as Germany, others stay below Bangladesh and most of them varied their position. This highlights the interest or even the fear of the population towards COVID-19. In fact, the first group will search more information on the COVID-19 than the mean for a fixed number of deaths. On the other hand, the second group has less interest in this disease. Finally, the last group changes depending on the different waves in their countries.
+                            Another point shown on the animated plot is the evolution of the position of each country related to the regression line. Some stay above it all the time such as Germany, others stay below such as Bangladesh and most of them varied their position. This highlights the interest or even the fear of the population towards COVID-19. In fact, the first group will search more information on the COVID-19 than the mean for a fixed number of deaths. On the other hand, the second group has less interest in this disease. Finally, the last group changes depending on the different waves in their countries.
                         </p>
                         <p class="text-black-75 mb-4">
                             Finally, we notice an increase of the slope of the regression line at the end of 2021 which coincides with the arrival of the Omicron variant and the third dose of vaccine in Europe.
                         </p>
+                        <p class="text-black-75 mb-4">
+                            Do the datasets correlate? Let's look at mooving averages plots of the deaths, pageviews and their correlation.
+                        </p>
+                    </div>
+                </div> 
+                <div>
+                    <img src="assets/figures/propa_cov.png" alt="Mobility timeseries" width="900">
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p>
+                            &ensp;
+                        </p>
+                        <p class="text-black-75 mb-4">
+                            Beautiful! We can clearly recognize the 6 COVID waves we have had so far when looking at the peaks of death and, maybe more impressive, we have a strong visualisation of the "COVID-craze" when it all began. Pageviews skyrocketed for a brief period and reached record hights never to be seen again.
+                        </p>
+                        <p class="text-black-75 mb-4">
+                            We also plotted the correlation between the two timeseries, and we can confirm that there is always a renewed interest for COVID for each new wave. Often, the correlation is highest just before the deaths are highest. 
+                        </p>
+                        <p class="text-black-75 mb-4">
+                            Now, we have seen the general dynamic of information-seeking behaviour in a world-wide scale, but how did individual countries react?
+                        </p>
                     </div>
                 </div> 
             </div>
-            
         </section>
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
