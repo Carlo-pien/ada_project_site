@@ -41,12 +41,12 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-start">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Case studies [Work in progress]</h1>
-                        <h5 class="text-white font-weight-bold">To Do</h5>
+                        <h1 class="text-white font-weight-bold">Case studies of Select Countries</h1>
+                        <h5 class="text-white font-weight-bold">Evolution of the pageviews within select countries</h5>
                         <hr class="divider"/>
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">TO DO</p>
+                        <p class="text-white-75 mb-5">7 minute read</p>
                         <a class="btn btn-primary btn-xl" href="#datastory">Continue the quest</a>
                     </div>
                 </div>
@@ -54,24 +54,192 @@
         </header>
         <!--DataStory-->
         <section class="page-section">
-            <div class="container px-4 px-lg-5 text-center" id="datastory">
-                <h2>What were people doing during the pandemic?</h2>
-                <hr class="divider" />
-                <div class="container px-4 px-lg-5">
+            <!-- Trigger/Open The Modal -->
+            <div id="portfolio">
+                <div class="container-fluid p-0">
+                    <h2 class = "text-center mt-0">Countries</h2>
+                    <hr class="divider" />
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-lg-8 text-center" >
                             <p class="mb-4 text-black-75">
-                            </p><p class="mb-4 text-black-75" >
+                                In this last section, we have picked three countries that have demonstrated a particularily interesting behaviour. Click on the flags to explore !
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <iframe src="assets/figures/bubble_plot_trust.html" width="1000" height="600"></iframe>
+                    <div class="row g-0">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class = "porfolio-box" title="Case study1">
+                                <div class="image-container">
+                                    <img id="myBtn" class="img-hover" src="assets/figures/germany.jpeg" width="200" height="300">
+                                    <div class="image-text">
+                                        Germany
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class = "porfolio-box" title="Case study1">
+                                <div class="image-container">
+                                    <img id="myBtn2" class="img-hover" src="assets/figures/italy.jpeg" width="200" height="300">
+                                    <div class="image-text">
+                                        Italy
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class = "porfolio-box" title="Case study1">
+                                <div class="image-container">
+                                    <img id="myBtn3" class="img-hover" src="assets/figures/thailand.jpeg" width="200" height="300">
+                                    <div class="image-text">
+                                        Thailand
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+            <!-- The Modal Germany-->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="btn-close"></span>
+                    </div>
+                    <div class="container">
+                        <h2 class="modal-title text-center">Germany</h2>
+                        <hr class="divider" />
+                        <div class="modal-body">
+                            <div class="row gx-4 gx-lg-5 justify-content-center">
+                                <div class="col-lg-8 text-center" >
+                                    <p class=" mb-4 text-black-75 ">
+                                        Germany is a large, highly developed country in Europe with a population of over 83 million people. It has a strong economy, with a GDP per capita of 63,835 US dollars, and ranks highly on the Human Development Index, placing it in the top 10 countries in the world. Germany is a federal parliamentary republic, with a decentralized system of government that involves sharing power between the national government and constituent states.
+                                    </p>
+                                    <img src="assets/figures/mobility_timeseries.png" width="650">
+                                    <p>
+                                        &ensp;
+                                    </p>
+                                    <p class=" mb-4 text-black-75 ">
+                                        The plot shows a clear distinction between pageviews, COVID-19 cases, and deaths. The number of pageviews increased significantly during the early months of the pandemic and then decreased with small spikes of activity during each new wave. It is interesting to compare the number of deaths between the first and second waves of the pandemic, as it shows the effectiveness of the partial lockdown implemented on March 22, 2020. 
+                                    </p>
+                                    <p class=" mb-4 text-black-75 ">
+                                        The first two waves of COVID-19 cases in Germany were relatively low compared to the third wave. Germany implemented effective contact tracing measures during the first part of the pandemic, which may have contributed to the lower number of COVID-19 cases until the third wave. However, in 2022, there was a peak in COVID-19 cases as people became more relaxed about the virus. Despite this, there were fewer deaths during this time because 77.8% of the population in Germany had been vaccinated.
+                                    </p>
+                                    <img src="assets/figures/mobility_timeseries.png" width="650">
+                                    <p>
+                                        &ensp;
+                                    </p>
+                                    <p class=" mb-4 text-black-75 ">
+                                        During the pandemic, Germany implemented a partial lockdown that required people to work from home and closed non-essential shops, but allowed people to go outside. This can be seen in the plot of mobility evolution for each category. The categories of retail and recreational, workplace, and transit station all experienced a decrease from the baseline.
+                                    </p>
+                                    <p class=" mb-4 text-black-75 ">
+                                        While retail and recreational and transit station gradually returned to the baseline over time, the workplace category remained at a constant level below the baseline. This may be due to companies restructuring and implementing more remote work. On the other hand, the park category remained constant at the beginning of the lockdown, before a clear increase at the end, indicating that people were eager to go out more after being confined to their homes.
+                                    </p>
+                                    <p class=" mb-4 text-black-75 ">
+                                        Based on the observations made, it appears that Germany overall managed the COVID-19 pandemic well by balancing the need to protect public health with the need to allow people some freedom during the pandemic. This may be one reason why 82% of the population in Germany trusted the government in 2020.
+                                    </p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- The Modal Italy-->
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="btn-close"></span>
+                </div>
+                <div class="container">
+                    <h2 class="modal-title text-center">Italy</h2>
+                    <hr class="divider" />
+                    <div class="modal-body">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-8 text-center" >
+                                <p class=" mb-4 text-black-75 ">
+                                    Germany is a large, highly developed country in Europe with a population of over 83 million people. It has a strong economy, with a GDP per capita of 63,835 US dollars, and ranks highly on the Human Development Index, placing it in the top 10 countries in the world. Germany is a federal parliamentary republic, with a decentralized system of government that involves sharing power between the national government and constituent states.
+                                </p>
+                                <img src="assets/figures/mobility_timeseries.png" width="650">
+                                <p>
+                                    &ensp;
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    The plot shows a clear distinction between pageviews, COVID-19 cases, and deaths. The number of pageviews increased significantly during the early months of the pandemic and then decreased with small spikes of activity during each new wave. It is interesting to compare the number of deaths between the first and second waves of the pandemic, as it shows the effectiveness of the partial lockdown implemented on March 22, 2020. 
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    The first two waves of COVID-19 cases in Germany were relatively low compared to the third wave. Germany implemented effective contact tracing measures during the first part of the pandemic, which may have contributed to the lower number of COVID-19 cases until the third wave. However, in 2022, there was a peak in COVID-19 cases as people became more relaxed about the virus. Despite this, there were fewer deaths during this time because 77.8% of the population in Germany had been vaccinated.
+                                </p>
+                                <img src="assets/figures/mobility_timeseries.png" width="650">
+                                <p>
+                                    &ensp;
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    During the pandemic, Germany implemented a partial lockdown that required people to work from home and closed non-essential shops, but allowed people to go outside. This can be seen in the plot of mobility evolution for each category. The categories of retail and recreational, workplace, and transit station all experienced a decrease from the baseline.
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    While retail and recreational and transit station gradually returned to the baseline over time, the workplace category remained at a constant level below the baseline. This may be due to companies restructuring and implementing more remote work. On the other hand, the park category remained constant at the beginning of the lockdown, before a clear increase at the end, indicating that people were eager to go out more after being confined to their homes.
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    Based on the observations made, it appears that Germany overall managed the COVID-19 pandemic well by balancing the need to protect public health with the need to allow people some freedom during the pandemic. This may be one reason why 82% of the population in Germany trusted the government in 2020.
+                                </p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal Italy-->
+        <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="btn-close"></span>
+                </div>
+                <div class="container">
+                    <h2 class="modal-title text-center">Thailand</h2>
+                    <hr class="divider" />
+                    <div class="modal-body">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-8 text-center" >
+                                <p class=" mb-4 text-black-75 ">
+                                    Germany is a large, highly developed country in Europe with a population of over 83 million people. It has a strong economy, with a GDP per capita of 63,835 US dollars, and ranks highly on the Human Development Index, placing it in the top 10 countries in the world. Germany is a federal parliamentary republic, with a decentralized system of government that involves sharing power between the national government and constituent states.
+                                </p>
+                                <img src="assets/figures/mobility_timeseries.png" width="650">
+                                <p>
+                                    &ensp;
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    The plot shows a clear distinction between pageviews, COVID-19 cases, and deaths. The number of pageviews increased significantly during the early months of the pandemic and then decreased with small spikes of activity during each new wave. It is interesting to compare the number of deaths between the first and second waves of the pandemic, as it shows the effectiveness of the partial lockdown implemented on March 22, 2020. 
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    The first two waves of COVID-19 cases in Germany were relatively low compared to the third wave. Germany implemented effective contact tracing measures during the first part of the pandemic, which may have contributed to the lower number of COVID-19 cases until the third wave. However, in 2022, there was a peak in COVID-19 cases as people became more relaxed about the virus. Despite this, there were fewer deaths during this time because 77.8% of the population in Germany had been vaccinated.
+                                </p>
+                                <img src="assets/figures/mobility_timeseries.png" width="650">
+                                <p>
+                                    &ensp;
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    During the pandemic, Germany implemented a partial lockdown that required people to work from home and closed non-essential shops, but allowed people to go outside. This can be seen in the plot of mobility evolution for each category. The categories of retail and recreational, workplace, and transit station all experienced a decrease from the baseline.
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    While retail and recreational and transit station gradually returned to the baseline over time, the workplace category remained at a constant level below the baseline. This may be due to companies restructuring and implementing more remote work. On the other hand, the park category remained constant at the beginning of the lockdown, before a clear increase at the end, indicating that people were eager to go out more after being confined to their homes.
+                                </p>
+                                <p class=" mb-4 text-black-75 ">
+                                    Based on the observations made, it appears that Germany overall managed the COVID-19 pandemic well by balancing the need to protect public health with the need to allow people some freedom during the pandemic. This may be one reason why 82% of the population in Germany trusted the government in 2020.
+                                </p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">

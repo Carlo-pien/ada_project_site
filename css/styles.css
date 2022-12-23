@@ -5430,11 +5430,12 @@ textarea.form-control-lg {
   width: 1em;
   height: 1em;
   padding: 0.25em 0.25em;
-  color: #000;
+  color: #087990;
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
   border: 0;
   border-radius: 0.25rem;
   opacity: 0.5;
+  float: right;
 }
 .btn-close:hover {
   color: #000;
@@ -5510,17 +5511,19 @@ textarea.form-control-lg {
 }
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1055;
-  display: none;
+  z-index: 2147483647;
+  padding-top:100px;
+  padding-left: 5rem;
+  padding-right: 5rem;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  outline: 0;
-}
+ }
 
 .modal-dialog {
   position: relative;
@@ -5566,12 +5569,18 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: auto;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #f8f9fa;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
 .modal-backdrop {
@@ -5582,6 +5591,7 @@ textarea.form-control-lg {
   width: 100vw;
   height: 100vh;
   background-color: #000;
+
 }
 .modal-backdrop.fade {
   opacity: 0;
@@ -5596,13 +5606,14 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
 .modal-header .btn-close {
   padding: 0.5rem 0.5rem;
-  margin: -0.5rem -0.5rem -0.5rem auto;
+  margin: 0.5rem -0.5rem -0.5rem auto;
+  float: right;
+
 }
 
 .modal-title {
@@ -5667,7 +5678,7 @@ textarea.form-control-lg {
   margin: 0;
 }
 .modal-fullscreen .modal-content {
-  height: 100%;
+  height: 80%;
   border: 0;
   border-radius: 0;
 }
@@ -11582,3 +11593,89 @@ header.masthead3 h1, header.masthead3 .h1 {
   height:90px; /* fixed header height*/
   margin:-90px 0 0; /* negative fixed header height */
 }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.image-container {
+  position: relative; /* Make the container relative so we can position the text on top of the image */
+}
+
+/* Style the image */
+.image-container img {
+  width: 100%; /* Make the image take up the full width of the container */
+  transition: color 0.5s; 
+}
+
+/* Style the text */
+.image-container .image-text {
+  position: absolute; /* Position the text absolutely within the container */
+  top: 50%; /* Place the text in the middle of the container vertically */
+  left: 50%; /* Place the text in the middle of the container horizontally */
+  transform: translate(-50%, -50%); /* Center the text within the container */
+  background: rgba(0, 0, 0, 0.5); /* Make the text have a translucent black background */
+  color: white; /* Make the text white */
+  padding: 10px; /* Add some padding around the text */
+  visibility: hidden; /* Hide the text by default */
+}
+
+.image-container:hover img {
+  color: red;
+}
+
+/* Show the text when the user hovers over the image */
+.image-container:hover .image-text {
+  visibility: visible;
+}
+
+.image-container:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4), 0 30px 30px 0 rgba(0, 0, 0, 0.30);
+  color: red;
+}
+
+img {
+  border: 2px solid #555;
+}
+.container-fluid img {
+  border: 2px solid white;
+}
+
+.img-hover:hover  {
+  border: 2px solid black;
+  color: red;
+}
+
+

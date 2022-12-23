@@ -110,7 +110,7 @@
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-bank fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Trust Dataset</h3>
-                            <p class="text-muted mb-0">Dataset representing the trust of the population towards government, journalists and science, by country.
+                            <p class="text-muted mb-0">Dataset representing the trust of countries inhabitants towards their government, journalists and science.
                             </p>
                         </div>
                     </div>
@@ -142,26 +142,23 @@
                     <div class="col-lg-3 col-md-6 text-center">
                             <ul>
                                 <li>
-                                    <p class="text-muted b-0">40 Languages</p>
+                                    <p class="text-muted b-0">38 selected countries</p>
                                 </li>
                                 <li>
-                                    <p class="text-muted b-0">5000 Articles</p>
+                                    <p class="text-muted b-0">6 categories</p>
                                 </li>
                                 <li>
-                                    <p class="text-muted b-0">X Datapoints</p>
+                                    <p class="text-muted b-0">2.1M Datapoints</p>
                                 </li>
                             </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                             <ul>
                                 <li>
-                                    <p class="text-muted b-0">40 Languages</p>
+                                    <p class="text-muted b-0">38 Selected countries</p>
                                 </li>
                                 <li>
-                                    <p class="text-muted b-0">5000 Articles</p>
-                                </li>
-                                <li>
-                                    <p class="text-muted b-0">X Datapoints</p>
+                                    <p class="text-muted b-0">114 Datapoints</p>
                                 </li>
                             </ul>
                     </div>
@@ -188,29 +185,61 @@
                 </div>
             </div>
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Our Datasets</h2>
+                <h2 class="text-center mt-0">Processing the Datasets</h2>
                 <hr class="divider" />
-                <div class="container px-4 px-lg-5">
+                <div class="container px-4 px-lg-5 text-center">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-lg-8 text-center">
                             <h4 class="text-start mb-4">Wikipedia pageview statistics</h4>
                             <p class="text-black-75 mb-4"> To begin with, we had the full dataset of all COVID-related articles in 175 languages. Of course, this does not align with our research questions so we performed the following preprocessing steps:</p>
                             <ol>
                                 <li>
-                                    <p class="text-black-75 mb-4">To narrow our focus, we eliminated any languages that had fewer than 10 articles and any languages that were not specific to a single country (such as English and Spanish). We determined that a language was specific to a country if at least 75% of the people who spoke it lived in that country. We treated each country as having a single dominant language. We validated this assumption after further investigation.</p> 
+                                    <p class="text-black-75 mb-4">To narrow our focus, we eliminated any languages that had fewer than 10 articles and any languages that were not specific to a single country (such as English and Spanish). We determined that a language was specific to a country if at least 75% of the people who spoke it lived in that country. We treated each country as having a single dominant language and we validated this assumption with further investigation.</p> 
                                 </li> 
                                 <li>
-                                    <p class="text-black-75 mb-4"> After this step, we are left with 40 countries/languages, which represents 30.6% of the total world population. From there, extracting the pageview statistics form the 1st january 2020 to the 31 jully of 2022 was easy. </p>
+                                    <p class="text-black-75 mb-4"> After this step, we are left with 38 countries/languages, which represents 30.6% of the total world population. From there, we extracted the pageview statistics form the 1st january 2020 to the 31 july of 2022. </p>
                                 </li>
                             </ol>
                             <h4 class="text-start mb-4">Mobility, Trust and COVID datasets</h4>
-                            <p class="text-black-75 mb-4">The preprocessing of these datasets was straightforward, we had only to adjust them to the selected countries and timeframes.</p>
-                            <h4 class="text-start mb-4">So, which countries are information-nerds? [todo]</h4>
-                            <p class="text-black-75 mb-4"></p>
-                            <p class="text-black-75 mb-4"></p>
-                            <p class="text-black-75 mb-4"></p>
+                            <p class="text-black-75 mb-4">The preprocessing of these datasets was straightforward, we had only to adjust them to by selecting the right countries and timeframes.</p>
+                            <h4 class="text-start mb-4">A first look into the datasets</h4>
                         </div>
                     </div>
+                    <div>
+                            <img src="assets/figures/plotdistribdata.png" alt="Mobility timeseries" width="900">
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <p>
+                                &ensp;
+                            </p>
+                            <p class="text-black-75 mb-4">
+                                By examining the histogram of the distributions of our three variables, we can see that they are skewed, i.e. right-heavy-tailed. The right tail is fat and long for cases and pageviews, and lower and shorter for deaths. The ECDF plots confirm this, showing that 95% of the pageviews and cases are contained within the first 5% of the range of the data, and 95% of the deaths data are contained within the first 12.5%. This is a strong indicator that we'll have to take the log of the data to extract meaningful information
+                            </p>
+                            <p class="text-black-75 mb-4">
+                                Do the datasets correlate? Let's look at mooving averages plots of the deaths, pageviews and their correlation.
+                            </p>
+                        </div>
+                    </div> 
+                    <div>
+                        <img src="assets/figures/propa_cov.png" alt="Mobility timeseries" width="900">
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <p>
+                                &ensp;
+                            </p>
+                            <p class="text-black-75 mb-4">
+                                Beautiful! We can clearly recognize the 6 COVID waves we have had so far when looking at the peaks of death and, maybe more impressive, we have a strong visualisation of the "COVID-craze" when it all began. Pageviews skyrocketed for a brief period and reached record hights never to be seen again.
+                            </p>
+                            <p class="text-black-75 mb-4">
+                                We also plotted the correlation between the two timeseries, and we can confirm that there is always a renewed interest for COVID for each new wave. Often, the correlation is highest just before the deaths are highest. 
+                            </p>
+                            <p class="text-black-75 mb-4">
+                                Now, we have seen the general dynamic of information-seeking behaviour in a world-wide scale, but how did individual countries react?
+                            </p>
+                        </div>
+                    </div> 
                 </div>
             </div>
             
@@ -218,8 +247,8 @@
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Let's get into the exploration!</h2>
-                <a class="btn btn-light btn-xl" href="page_2.html">Next page</a>
+                <h2 class="mb-4">Let's get into the exploration !</h2>
+                <a class="btn btn-light btn-xl" href="page_2.html">To Digital Propagation</a>
             </div>
         </section>  
         <!-- Footer-->
