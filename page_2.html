@@ -48,13 +48,14 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5">9 minute read</p>
+                        <a class="btn btn-primary btn-xl" href="#datastory2">Continue the quest</a>
                     </div>
                 </div>
             </div>
         </header>
         <!--DataStory-->
-        <section class="page-section bg-lighter">
-            <div class="container px-4 px-lg-5 text-center" id="datastory2">
+        <section class="page-section bg-lighter" id="datastory2">
+            <div class="container px-4 px-lg-5 text-center" >
                 <h2>Exploring the maps</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -69,7 +70,7 @@
                             For the first part, we are going to look at the covid-related deaths, as they provide a metric that is independent of the testing intensity of countries. For the second, we are of course looking at the pageview statistics for the covid-related articles. How do the propagations maps look like ? Let’s see! 
                         </p>
                         <p class="text-black-75 mb-4">
-                            We plot the relationship between the evolution of the COVID-19 pandemic and Wikipedia page views related to the disease by comparing the cumulative number of COVID-19 deaths per country to the cumulative number of Wikipedia page views. Both numbers are normalized per 100,000 inhabitants for each country. The period we plot (22 of January 2020 to 29th of August 2020) roughly corresponds to the first wave.  
+                            We plot the relationship between the evolution of the COVID-19 pandemic and Wikipedia pageviews related to the disease by comparing the cumulative number of COVID-19 deaths per country to the cumulative number of Wikipedia pageviews. Both numbers are normalized per 100,000 inhabitants for each country. The period we plot (22 of January 2020 to 29th of August 2020) roughly corresponds to the first wave.  
                         </p>
                     </div>
                 </div>
@@ -106,6 +107,14 @@
                             <source src="assets/figures/Ada1stwave.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <p>
+                            &ensp;
+                        </p>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="text-black-75 mb-4"> During the first wave in early 2020, we see that the disease spread first in Asia (China, South Korea, and Japan had the highest number of cases in February). However, in terms of pageviews, European countries had the highest number of views, with Germany and Czechia having more than 150k pageviews per 1 million inhabitants. When the pandemic spread to Europe in March and April, we see a significant increase in the number of deaths, cases, and pageviews. Italy and Sweden had the highest number of deaths and cases, while Germany continued to have the highest number of pageviews. From the first wave, we can see that the pageviews of the top country decreased as the population became more informed about COVID-19 and did not feel the need to search for information as frequently.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-10 text-center">
                         <p>
@@ -116,6 +125,15 @@
                             <source src="assets/figures/Ada2stwave.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <p>
+                            &ensp;
+                        </p>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="text-black-75 mb-4"> 
+                                    During the second wave at the end of 2020, the virus spread widely in Europe, with the top 5 countries for deaths being European countries, with the exception of Israel. Czechia, and the Netherlands are among the top countries for deaths. Unlike the first wave, this wave does not appear to be as global, as there are no Asian countries in the top 10 throughout the wave. It is all fun to notice that Germany and Czechia are again among the top 3 countries in terms of pageviews. Their populations are becoming COVID experts!                                </p>
+                            </div>
+                        </div>
                     </div>  
                     <div class="col-lg-10 text-center">
                         <p>
@@ -126,13 +144,21 @@
                             <source src="assets/figures/Adalastwave.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        <p>
+                            &ensp;
+                        </p>
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="text-black-75 mb-4"> 
+                                    The last wave seems more global as we can see country from all over the world in the top 10 of deaths and cases (South Korea, Germany, Russia, Finland). The numbers of pageviews are ridiculous compared to the one at the beginning of the pandemic. Germany who had also the 1st place in 2020 has fallen from 150k to 2k pageviews per 1M inhabitants.                            </div>
+                        </div>
                     </div>  
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-lg-8 text-center">
                             <p>
                                 &ensp;
                             </p>
-                            <p class="text-black-75 mb-4"> Looking at the different bar races, one may deduce the following points:</p>
+                            <p class="text-black-75 mb-4"> Looking at the different bar races, we have the following general observations:</p>
                             <ol>
                                 <li>
                                     <p class="text-black-75 mb-4">
@@ -178,7 +204,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <p class="text-black-75 mb-4" >
-                            Now that we have a sense of the evolution of the pandemic and the digital propagation the last two years, let's go deeper in the analysis by studying the evolution of the regression by windows of 60 day that relates these two dataset by country. For that, we fit a linear regression on the cumulative wikipedia pageviews and the cumulative deaths per country adding an intercept, and we plot the evolution of the fitted line through the time.
+                            Now that we have a sense of the evolution of the pandemic and the digital propagation over the last two years, let's go deeper in the analysis by studying the evolution of the regression by windows of 60 day that relates these two dataset by country. For that, we fit a linear regression on the cumulative wikipedia pageviews and the cumulative deaths per country adding an intercept, and we plot the evolution of the fitted line through the time.
                         </p>
                     </div>
                 </div> 
@@ -188,16 +214,19 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <p class="text-black-75 mb-4" >
-                            Looking at this Figure, one notice that the slope of the line decreases with the time. It passes from  81.01% (p-value: 0.03) to 5.52% (p-value: 0.67). These values show that the earlier in the pandemic we were, the higher was the relation between COVID-19 deaths and wikipedia page views. However, with the arrival of the new waves, it decreases and the p-value of 0.67 shows even that we can not reject a no slope in the middle of 2021. It is possible that as people have become more familiar with COVID-19 and the measures taken to control its spread, their interest in reading about the topic has decreased. Additionally, it could be that the impact of COVID-19 on people's daily lives has decreased over time, leading to a decrease in their interest in reading about it. 
+                            Looking at this Figure, one notice that the slope of the line decreases with the time. It passes from  81.01% (p-value: 0.03) to 5.52% (p-value: 0.67). These values show that the earlier in the pandemic we were, the higher was the relation between COVID-19 deaths and wikipedia pageviews. However, with the arrival of the new waves, it decreases and the p-value of 0.67 shows even that we cannot reject the "no slope" hypothesis the middle of 2021. It is possible that as people have become more familiar with COVID-19 and the measures taken to control its spread, their interest in reading about the topic has decreased. Additionally, it could be that the impact of COVID-19 on people's daily lives has decreased over time, leading to a decrease in their interest in reading about it. 
                         </p>
                         <p class="text-black-75 mb-4">
-                            Another point shown on the animated plot is the evolution of the position of each country related to the regression line. Some stay above it all the time such as Germany, others stay below such as Bangladesh and most of them varied their position. This highlights the interest or even the fear of the population towards COVID-19. In fact, the first group will search more information on the COVID-19 than the mean for a fixed number of deaths. On the other hand, the second group has less interest in this disease. Finally, the last group changes depending on the different waves in their countries.
+                            Another point shown on the animated plot is the evolution of the position of each country related to the regression line. Some stay above it all the time such as Germany, others stay below such as Bangladesh and most of them varied their position such as Thaïland. Interestingly, their interest in COVID-19 does not increase even when they have a strong increase in death rates. 
+                        </p>
+                        <p class="text-black-75 mb-4">
+                            Overall, this plot highlights the interest or even the fear of the population towards COVID-19. In fact, the first group (above the line) will search more information on the COVID-19 than the mean for a fixed number of deaths. On the other hand, the second group (below the line) has less interest in this disease. Finally, the last group changes depending on the different waves in their countries.
                         </p>
                         <p class="text-black-75 mb-4">
                             Finally, we notice an increase of the slope of the regression line at the end of 2021 which coincides with the arrival of the Omicron variant and the third dose of vaccine in Europe.
                         </p>
                         <p class="text-black-75 mb-4">
-                            To continue in this optic, we plot the moving average of the overall deaths and pageviews. Does the correlation between these two time series is higher with the arrival of new waves in the pandemic?                         </p>
+                            To continue in this optic, we plot the moving average of the overall deaths and pageviews. Is the correlation between these two time series higher with the arrival of new waves in the pandemic?                         </p>
                     </div>
                 </div> 
                 <div>
